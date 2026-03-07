@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium bread and bakery products delivered by Aigrit drones">
+    <title>Products - Aigrit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/floating-chatbot.css">
+    <style>
+        @keyframes pop {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.4);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .pop-on-hover:hover {
+            animation: pop 0.5s infinite;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo-link">
+                <div class="logo">
+                    <img src="../images/earth.png" alt="Aigrit Logo" width="100" height="100" class="logo-svg">
+                    <div>
+                        <h1>Aigrit</h1>
+                        <p class="tagline">AI Drone Bakery Delivery</p>
+                    </div>
+                </div>
+            </a>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="cart-nav-item">
+                    <button id="cartButton" class="cart-button" aria-label="Shopping Cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        <span id="cartBadge" class="cart-badge">0</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <!-- Hero Section -->
+    <section class="hero subpage-hero" style="background: linear-gradient(135deg, #2D7D34 0%, #1a3a52 100%); min-height: 400px; grid-template-columns: 1fr; border-radius: 50px; max-width: 1200px;">
+        <div class="hero-content">
+            <h1>Our Products</h1>
+            <p>Premium bread and bakery products delivered fresh by drone</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="all-products" class="products-section">
+        <h2 style="color: #ffffff; text-align: center; margin-bottom: 2rem;">Freshly Baked Selections</h2>
+
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" onclick="filterProducts('all')">All Products</button>
+            <button class="filter-btn" onclick="filterProducts('bread')">Bread</button>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="product-grid" id="productGrid" style="max-width: 400px; margin: 0 auto;">
+            <!-- Product 1 - Classic Sourdough -->
+            <div id="fresh-bread-card" class="product-card" data-category="bread" style="max-width: 350px; margin: 0 auto;">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1598373182133-52452f7691ef?q=80&w=1925&auto=format&fit=crop" alt="Freshly baked sourdough bread" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="product-info">
+                    <h3>Fresh Bread</h3>
+                    <p class="description">Freshly baked bread with a crispy crust and soft interior.</p>
+                    <p class="price">€1</p>
+                    <button class="btn btn-primary btn-sm" onclick="addToCart('bread')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscription Section -->
+    <section class="subscription-section" style="background: #FFF8F3 url('../images/Subscription.jpg') no-repeat center center; background-size: 100% 100%;">
+        <div class="subscription-container">
+            <h2 style="color: #ffffff; margin-bottom: 2rem; font-size: 2.5rem;">Subscription Plans</h2>
+            <div class="subscription-grid">
+                <div class="subscription-card weekly">
+                    <h3>Weekly</h3>
+                    <p class="subscription-price">€2/week</p>
+                    <ul class="subscription-features">
+                        <li>✓ 3 Fresh bread deliveries</li>
+                        <li>✓ Free delivery</li>
+                        <li>✓ 10% discount</li>
+                    </ul>
+                    <button class="btn btn-primary btn-sm" onclick="window.location.href='contact.html'">Subscribe</button>
+                </div>
+
+                <div class="subscription-card monthly">
+                    <h3>Monthly</h3>
+                    <p class="subscription-price">€6/month</p>
+                    <ul class="subscription-features">
+                        <li>✓ 12 Fresh bread deliveries</li>
+                        <li>✓ Free delivery</li>
+                        <li>✓ 20% discount</li>
+                    </ul>
+                    <button class="btn btn-primary btn-sm" onclick="window.location.href='contact.html'">Subscribe Now</button>
+                </div>
+
+                <div class="subscription-card custom">
+                    <h3>Custom</h3>
+                    <p class="subscription-price">Contact Us</p>
+                    <ul class="subscription-features">
+                        <li>✓ Custom frequency</li>
+                        <li>✓ Special requests</li>
+                        <li>✓ Corporate plans</li>
+                        <li>✓ Bulk discounts</li>
+                    </ul>
+                    <button class="btn btn-secondary btn-sm" onclick="window.location.href='contact.html'">Get Quote</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <h2>Order Your Fresh Bread Today</h2>
+        <p>Fast delivery, premium quality, sustainable technology</p>
+        <button class="btn btn-primary btn-large pop-on-hover" onclick="window.location.href='contact.html'">Place Order</button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Aigrit</h4>
+                <p class="footer-description" style="color: white;">AI Autonomous Drone Delivery for Premium Bread</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a onclick="window.open('https://www.facebook.com/L.P.Sry', '_blank')" rel="noopener noreferrer" aria-label="Facebook" class="social-facebook">f</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Phone: <a href="tel:+85599499746">099 499 746</a></p>
+                <p>Email: <a href="mailto:lengpovsry666@gmail.com">lengpovsry666@gmail.com</a></p>
+                <p>Location: Brussels, Belgium</p>
+                <p><a href="services.html">Services</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul style="white-space: nowrap;">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Aigrit. All rights reserved. | CEO & Founder: Leng Peou Sry</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/floating-chatbot.js"></script>
+</body>
+</html>

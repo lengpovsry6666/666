@@ -1,0 +1,855 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Aigrit - AI Autonomous Drone Delivery Bread Service">
+    <title>Contact Us - Aigrit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/floating-chatbot.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo-link">
+                <div class="logo">
+                    <img src="../images/earth.png" alt="Aigrit Logo" width="100" height="100" class="logo-svg">
+                    <div>
+                        <h1>Aigrit</h1>
+                        <p class="tagline">AI Drone Bakery Delivery</p>
+                    </div>
+                </div>
+            </a>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="cart-nav-item">
+                    <button id="cartButton" class="cart-button" aria-label="Shopping Cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        <span id="cartBadge" class="cart-badge">0</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <!-- Hero Section -->
+    <section class="hero subpage-hero" style="background: linear-gradient(135deg, #2D7D34 0%, #1a3a52 100%); min-height: 400px; grid-template-columns: 1fr; border-radius: 50px; max-width: 1200px;">
+        <div class="hero-content">
+            <h1>Contact Us</h1>
+            <p>Get in touch with our team. We're here to help!</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-container">
+        <h2 class="section-title" style="color: white;">Get In Touch</h2>
+        <div class="contact-grid">
+            <!-- Contact Form -->
+            <form id="contactForm" style="background: url('../images/get in touch.jpg') no-repeat center center; background-size: 100% 100%; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); border: 4px solid white;">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required placeholder="">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required placeholder="">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject *</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Select a subject</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="order">Order Issue</option>
+                        <option value="delivery">Delivery Problem</option>
+                        <option value="partnership">Partnership Opportunity</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" required placeholder="Tell us how we can help..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+                <p style="color: black; font-size: 0.9rem; margin-top: 1rem;"><br>We'll get back to you within 24 hours</p>
+            </form>
+
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <h3 style="color: white; font-size: 1.5rem; margin-bottom: 1rem;">Contact Information</h3>
+
+                <div class="contact-item">
+                    <div>
+                        <h3 style="color: white;">Phone</h3>
+                        <p style="font-weight: 600;"><a href="tel:+85599499746">099 499 746</a></p>
+                        <p style="font-size: 0.9rem; color: #555; font-weight: 500;">Available 24/7</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div>
+                        <h3 style="color: white;">Email</h3>
+                        <p style="font-weight: 600;"><a href="mailto:lengpovsry666@gmail.com">lengpovsry666@gmail.com</a></p>
+                        <p style="font-size: 0.9rem; color: #555; font-weight: 500;">Response within 24 hours</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div>
+                        <h3 style="color: white;">Location</h3>
+                        <p>Brussels, Belgium</p>
+                        <p style="font-size: 0.9rem; color: #999;">Service coverage across central Brussels</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div>
+                        <h3 style="color: white;">Leadership</h3>
+                        <p><strong>CEO & Founder:</strong> Leng Peou Sry</p>
+                        <p style="font-size: 0.9rem; color: #999;">Vision: Revolutionize bread delivery with AI</p>
+                    </div>
+                </div>
+
+                <!-- Social Media -->
+                <div style="margin-top: 2rem;">
+                    <h3 style="color: white; margin-bottom: 1rem;">Follow Us</h3>
+                    <div class="social-grid">
+                    <div class="social-card" style="display: flex; flex-direction: column; align-items: center; justify-content: center; background: url('../images/follow us.jpg') no-repeat center center; background-size: 100% 100%; border: 2px solid white; border-radius: 12px;">
+                            <a onclick="window.open('https://www.facebook.com/L.P.Sry', '_blank')" rel="noopener noreferrer" title="Follow us on Facebook" class="social-facebook contact-social-icon">f</a>
+                            <p style="color: white; font-weight: 600;">Facebook</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-background" style="background-image: url('../images/FAQ.jpg');">
+        <h2 class="section-title" style="color: white; text-align: center;">Frequently Asked Questions</h2>
+
+        <div class="executive-ai-container">
+            <div class="executive-header">
+                <div class="executive-branding">
+                    <div class="executive-logo-area">
+                        <div class="executive-earth-wrapper">
+                            <img src="../images/earth.png" alt="Aigrit Executive AI" class="executive-earth">
+                            <div class="executive-pulse"></div>
+                        </div>
+                        <div class="executive-title-area">
+                            <h2 class="executive-title">Aigrit Drone Delivery Support</h2>
+                        </div>
+                    </div>
+                </div>
+                <p class="executive-description">Get instant answers about our AI-powered drone delivery service. Fast, reliable bread delivery straight to your doorstep in Brussels.</p>
+            </div>
+
+            <div class="executive-interface">
+                <div class="executive-control-panel">
+                    <div class="unified-ai-section">
+                        <div class="knowledge-cards">
+                                <div class="card" data-topic="overview">
+                                    <div class="card-content">
+                                        <h5 class="show-desktop">Company Overview</h5>
+                                        <h5 class="show-mobile">Company</h5>
+                                        <p class="show-desktop">Learn about our mission and services</p>
+                                        <p class="show-mobile">Our mission and services</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="card" data-topic="tech">
+                                    <div class="card-content">
+                                        <h5 class="show-desktop">Technology Stack</h5>
+                                        <h5 class="show-mobile">Technology</h5>
+                                        <p class="show-desktop">Discover our innovative systems</p>
+                                        <p class="show-mobile">Innovative systems</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="card" data-topic="delivery">
+                                    <div class="card-content">
+                                        <h5 class="show-desktop">Delivery Process</h5>
+                                        <h5 class="show-mobile">Delivery</h5>
+                                        <p class="show-desktop">How we get bread to your door</p>
+                                        <p class="show-mobile">Bread to your door</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="card" data-topic="service">
+                                    <div class="card-content">
+                                        <h5 class="show-desktop">Service Areas</h5>
+                                        <h5 class="show-mobile">Areas</h5>
+                                        <p class="show-desktop">Where we currently operate</p>
+                                        <p class="show-mobile">Where we operate</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="card" data-topic="order">
+                                    <div class="card-content">
+                                        <h5 class="show-desktop">Ordering Guide</h5>
+                                        <h5 class="show-mobile">Ordering</h5>
+                                        <p class="show-desktop">Easy steps to place orders</p>
+                                        <p class="show-mobile">Place orders easily</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="card" data-topic="support">
+                                    <div class="card-content">
+                                        <h5 class="show-desktop">Support Center</h5>
+                                        <h5 class="show-mobile">Support</h5>
+                                        <p class="show-desktop">Get help when you need it</p>
+                                        <p class="show-mobile">Get help anytime</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="ai-response-panel" id="modernAiResponse">
+                                <div class="panel-placeholder">
+                                    <div class="placeholder-visual">
+                                        <div class="pulse-circle"></div>
+                                        <div class="pulse-circle"></div>
+                                        <div class="pulse-circle"></div>
+                                    </div>
+                                    <div class="placeholder-text">
+                                        <h5>Ready</h5>
+                                        <p>Tap cards for info</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+    <!-- Google Maps Section - Professional Redesign -->
+    <section class="map-section professional-map">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Aigrit</h2>
+                <p class="section-subtitle">Strategic location in the heart of Brussels, Belgium</p>
+            </div>
+            
+            <div class="professional-map-layout">
+                <!-- Enhanced Google Map -->
+                <div class="professional-map-wrapper">
+                    <div id="google-map" class="professional-map-frame"></div>
+                    <!-- Professional Information Badge -->
+                    <div class="professional-map-badge">
+                        <div class="badge-content">
+                            <div class="badge-header">
+                                <h4>Aigrit</h4>
+                            </div>
+                            <div class="badge-details">
+                                <p class="badge-address">Brussels, Belgium</p>
+                                <p class="badge-coords">50.8455° N, 4.3655° E</p>
+                            </div>
+                            <button id="find-us-btn" class="badge-button">
+                                Find Us
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Professional Location Card -->
+                <div class="professional-location-card">
+                    <div class="card-header">
+                        <h3>Corporate Information</h3>
+                    </div>
+                    
+                    <div class="card-content">
+                        <div class="info-item">
+                            <div class="info-text">
+                                <h4>Strategic Location</h4>
+                                <p>Central Business District<br>Brussels, Belgium 1000</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-text">
+                                <h4>Business Hours</h4>
+                                <p>Monday - Friday: 8:00 AM - 8:00 PM<br>Saturday: 9:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-text">
+                                <h4>Service Area</h4>
+                                <p>15km radius coverage<br>Central Brussels operations</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-actions">
+                        <button id="enhanced-find-us-btn" class="action-button primary">
+                            Find Us
+                        </button>
+                        <a href="tel:+85599499746" class="action-button secondary">
+                            Call Support
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <h2>Have More Questions?</h2>
+        <p>We're here to help. Fill out the form above or reach out directly</p>
+        <button class="btn btn-primary btn-large flying-mailbox-btn" onclick="document.getElementById('contactForm').scrollIntoView({behavior: 'smooth'})">Send Message</button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Aigrit</h4>
+                <p class="footer-description" style="color: white;">AI Autonomous Drone Delivery for Premium Bread</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a onclick="window.open('https://www.facebook.com/L.P.Sry', '_blank')" rel="noopener noreferrer" aria-label="Facebook" class="social-facebook">f</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Phone: <a href="tel:+85599499746">099 499 746</a></p>
+                <p>Email: <a href="mailto:lengpovsry666@gmail.com">lengpovsry666@gmail.com</a></p>
+                <p>Location: Brussels, Belgium</p>
+                <p><a href="services.html">Services</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul style="white-space: nowrap;">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Aigrit. All rights reserved. | CEO & Founder: Leng Peou Sry</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/floating-chatbot.js"></script>
+    
+    <!-- Professional AI FAQ System Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const proAiResponses = {
+                operations: {
+                    title: "Operational Excellence",
+                    content: "Our AI-optimized delivery network operates with 99.7% reliability. Drones complete deliveries in 25-30 minutes using advanced route optimization algorithms that analyze real-time traffic, weather patterns, and demand forecasting. Our fleet management system monitors 127 operational parameters simultaneously for maximum efficiency."
+                },
+                pricing: {
+                    title: "Transparent Pricing Structure",
+                    content: "Delivery fees range from €1.50-€3.00 based on distance and demand patterns. Our dynamic pricing algorithm considers flight distance, battery consumption, peak hour surcharges, and subscription tier benefits. Enterprise clients receive volume discounts of up to 35%, while premium subscribers enjoy unlimited free deliveries."
+                },
+                technology: {
+                    title: "Advanced Technology Stack",
+                    content: "Our drone ecosystem features military-grade collision avoidance systems with LIDAR and computer vision. Real-time monitoring tracks 47 safety parameters per flight, including battery health, weather conditions, and obstacle detection. All communications are encrypted with AES-256 security protocols, and our AI continuously learns from 50,000+ successful deliveries."
+                },
+                support: {
+                    title: "Comprehensive Support Services",
+                    content: "Our 24/7 AI support system provides instant assistance through multiple channels. Technical issues are resolved within 15 minutes via our automated diagnostic system. For complex inquiries, human specialists are available within 2 hours. Corporate accounts receive dedicated support managers and SLA guarantees of 99.9% uptime."
+                }
+            };
+
+            const responseArea = document.getElementById('proAiResponseArea');
+            const searchInput = document.querySelector('.pro-ai-search-input');
+            const searchButton = document.querySelector('.pro-ai-search-submit');
+            const categoryCards = document.querySelectorAll('.pro-ai-category-card');
+
+            // Handle category cards
+            categoryCards.forEach(card => {
+                card.addEventListener('click', () => {
+                    const category = card.dataset.category;
+                    showProAIResponse(proAiResponses[category]);
+                });
+            });
+
+            // Handle search input
+            searchButton.addEventListener('click', handleSearch);
+            searchInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    handleSearch();
+                }
+            });
+
+            function handleSearch() {
+                const query = searchInput.value.trim().toLowerCase();
+                if (!query) return;
+
+                // Enhanced keyword matching with confidence scoring
+                const confidenceScores = {};
+                
+                // Operations keywords
+                const opsScore = (query.match(/(delivery|time|fast|speed|route|fleet|minute)/g) || []).length;
+                confidenceScores.operations = opsScore;
+                
+                // Pricing keywords
+                const priceScore = (query.match(/(price|cost|fee|subscription|discount|bulk)/g) || []).length;
+                confidenceScores.pricing = priceScore;
+                
+                // Technology keywords
+                const techScore = (query.match(/(drone|safety|technology|tracking|ai|security)/g) || []).length;
+                confidenceScores.technology = techScore;
+                
+                // Support keywords
+                const supportScore = (query.match(/(support|help|contact|issue|problem|assistance)/g) || []).length;
+                confidenceScores.support = supportScore;
+
+                // Find best match
+                const bestCategory = Object.keys(confidenceScores).reduce((a, b) => 
+                    confidenceScores[a] > confidenceScores[b] ? a : b
+                );
+
+                if (confidenceScores[bestCategory] > 0) {
+                    showProAIResponse(proAiResponses[bestCategory]);
+                } else {
+                    showFallbackResponse(query);
+                }
+                
+                searchInput.value = '';
+            }
+
+            function showProAIResponse(responseData) {
+                // Add sophisticated typing indicator
+                responseArea.innerHTML = `
+                    <div class="pro-ai-thinking">
+                        <div class="thinking-animation">
+                            <div class="neural-node"></div>
+                            <div class="neural-node"></div>
+                            <div class="neural-node"></div>
+                        </div>
+                        <div class="thinking-status">Analyzing query with neural networks...</div>
+                        <div class="processing-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </div>
+                `;
+
+                // Simulate AI processing with realistic delays
+                setTimeout(() => {
+                    responseArea.innerHTML = `
+                        <div class="pro-ai-response">
+                            <div class="response-header">
+                                <div class="response-ai-avatar">🤖</div>
+                                <div class="response-meta">
+                                    <h4>${responseData.title}</h4>
+                                    <div class="response-timestamp">${new Date().toLocaleTimeString()} • AI Analysis Complete</div>
+                                </div>
+                            </div>
+                            <div class="response-content">
+                                <p>${responseData.content}</p>
+                                <div class="response-confidence">
+                                    <span class="confidence-meter">Confidence: 94.7%</span>
+                                    <span class="data-points">Based on 15,000+ data points</span>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    responseArea.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }, 1500 + Math.random() * 1000);
+            }
+
+            function showFallbackResponse(query) {
+                responseArea.innerHTML = `
+                    <div class="pro-ai-thinking">
+                        <div class="thinking-animation">
+                            <div class="neural-node"></div>
+                            <div class="neural-node"></div>
+                            <div class="neural-node"></div>
+                        </div>
+                        <div class="thinking-status">Processing specialized inquiry...</div>
+                    </div>
+                `;
+
+                setTimeout(() => {
+                    responseArea.innerHTML = `
+                        <div class="pro-ai-response">
+                            <div class="response-header">
+                                <div class="response-ai-avatar">🤖</div>
+                                <div class="response-meta">
+                                    <h4>Specialized Assistance Required</h4>
+                                    <div class="response-timestamp">${new Date().toLocaleTimeString()} • Human Review Recommended</div>
+                                </div>
+                            </div>
+                            <div class="response-content">
+                                <p>I've analyzed your query about "${query}" and determined this requires specialized attention. Our human support team can provide detailed assistance regarding this specific topic.</p>
+                                <div class="response-actions">
+                                    <button class="action-button" onclick="window.location.href='tel:+85599499746'">📞 Call Support</button>
+                                    <button class="action-button" onclick="window.location.href='mailto:lengpovsry666@gmail.com'">📧 Email Team</button>
+                                </div>
+                                <div class="response-confidence">
+                                    <span class="confidence-meter">Confidence: 72.3%</span>
+                                    <span class="data-points">Escalated to specialist team</span>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }, 2000);
+            }
+        });
+    </script>
+    
+    <!-- Google Maps Enhanced Implementation -->
+    <script>
+        // Enhanced map implementation with information overlay
+        function initEnhancedMap() {
+            const mapContainer = document.getElementById("google-map");
+            if (!mapContainer) return;
+            
+            // Clear container
+            mapContainer.innerHTML = '';
+            
+            // Create enhanced iframe with Google Maps embed
+            const iframe = document.createElement('iframe');
+            iframe.src = `https://maps.google.com/maps?q=50.845495266062926,4.36552973069523&hl=en&z=17&output=embed`;
+            iframe.width = '100%';
+            iframe.height = '500';
+            iframe.style.border = '0';
+            iframe.style.borderRadius = '17px';
+            iframe.allowFullscreen = true;
+            iframe.loading = 'lazy';
+            iframe.referrerPolicy = 'no-referrer-when-downgrade';
+            iframe.title = 'Aigrit Headquarters - Brussels, Belgium';
+            
+            mapContainer.appendChild(iframe);
+        }
+        
+        // Enhanced navigation functionality
+        function setupEnhancedNavigation() {
+            // Handle both Find Us buttons
+            const findUsBtn = document.getElementById('find-us-btn');
+            const enhancedFindUsBtn = document.getElementById('enhanced-find-us-btn');
+            
+            const handleClick = function() {
+                const destination = "50.845495266062926,4.36552973069523";
+                const userAgent = navigator.userAgent.toLowerCase();
+                let mapsUrl;
+                
+                if (/iphone|ipad|ipod/.test(userAgent)) {
+                    // iOS devices
+                    mapsUrl = `https://maps.apple.com/?daddr=${destination}`;
+                } else if (/android/.test(userAgent)) {
+                    // Android devices
+                    mapsUrl = `https://maps.google.com/?daddr=${destination}`;
+                } else {
+                    // Desktop or other devices
+                    mapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${destination}`;
+                }
+                
+                window.open(mapsUrl, '_blank');
+            };
+            
+            if (findUsBtn) {
+                findUsBtn.addEventListener('click', handleClick);
+            }
+            
+            if (enhancedFindUsBtn) {
+                enhancedFindUsBtn.addEventListener('click', handleClick);
+            }
+        }
+        
+        // Initialize when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            initEnhancedMap();
+            setupEnhancedNavigation();
+        });
+    </script>
+    
+    <!-- Executive AI FAQ System Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const execAiResponses = {
+                delivery: {
+                    title: "Delivery Information",
+                    content: "Our drone delivery service completes orders in 25-30 minutes from placement to doorstep. We serve the central Brussels area with 15km radius coverage. Real-time GPS tracking lets you follow your drone's progress through our mobile app. Orders are delivered fresh with temperature-controlled packaging to maintain bread quality."
+                },
+                ordering: {
+                    title: "Ordering & Payment",
+                    content: "Place orders through our website, mobile app, or phone. We accept all major credit cards, debit cards, mobile wallets, and bank transfers. Delivery fees range from €1.50-€3.00 based on distance. Subscribers enjoy free delivery on all orders, and bulk orders over €50 also qualify for complimentary shipping."
+                },
+                safety: {
+                    title: "Safety & Technology",
+                    content: "Our drones feature military-grade collision avoidance systems with LIDAR and computer vision. Each flight is monitored by 47 safety parameters including weather conditions, battery health, and obstacle detection. All communications use AES-256 encryption, and our AI system has completed over 50,000 successful deliveries with 99.997% safety record."
+                },
+                support: {
+                    title: "Customer Support",
+                    content: "Our 24/7 support team responds within 15 minutes to all inquiries. Technical issues are resolved quickly through our automated diagnostic system. For complex concerns, human specialists are available within 2 hours. We offer replacements or refunds for unsatisfactory orders within 24 hours, and corporate clients receive dedicated account managers."
+                }
+            };
+
+            const responseArea = document.getElementById('executiveAiResponseArea');
+            const searchInput = document.querySelector('.executive-query-input');
+            const searchButton = document.querySelector('.process-query-btn');
+            const domainOptions = document.querySelectorAll('.domain-option');
+
+            // Handle domain selection
+            domainOptions.forEach(option => {
+                option.addEventListener('click', () => {
+                    // Remove active class from all options
+                    domainOptions.forEach(opt => opt.classList.remove('active'));
+                    // Add active class to clicked option
+                    option.classList.add('active');
+                    
+                    const domain = option.dataset.domain;
+                    showExecAIResponse(execAiResponses[domain]);
+                });
+            });
+
+            // Handle search input
+            searchButton.addEventListener('click', handleExecSearch);
+            searchInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    handleExecSearch();
+                }
+            });
+
+            function handleExecSearch() {
+                const query = searchInput.value.trim().toLowerCase();
+                if (!query) return;
+
+                // Delivery service keyword analysis
+                const domainScores = {};
+                
+                // Delivery keywords
+                const deliveryScore = (query.match(/(time|fast|speed|minute|area|coverage|track|gps)/g) || []).length;
+                domainScores.delivery = deliveryScore;
+                
+                // Ordering keywords
+                const orderingScore = (query.match(/(order|place|buy|payment|price|cost|fee|subscription)/g) || []).length;
+                domainScores.ordering = orderingScore;
+                
+                // Safety keywords
+                const safetyScore = (query.match(/(safe|drone|security|tracking|reliable|monitor)/g) || []).length;
+                domainScores.safety = safetyScore;
+                
+                // Support keywords
+                const supportScore = (query.match(/(help|support|contact|issue|problem|complaint)/g) || []).length;
+                domainScores.support = supportScore;
+
+                // Find best matching domain
+                const bestDomain = Object.keys(domainScores).reduce((a, b) => 
+                    domainScores[a] > domainScores[b] ? a : b
+                );
+
+                if (domainScores[bestDomain] > 0) {
+                    showExecAIResponse(execAiResponses[bestDomain]);
+                } else {
+                    showExecFallbackResponse(query);
+                }
+                
+                searchInput.value = '';
+            }
+
+            function showExecAIResponse(responseData) {
+                // Add delivery support processing indicator
+                responseArea.innerHTML = `
+                    <div class="exec-processing">
+                        <div class="exec-analysis-grid">
+                            <div class="analysis-node"></div>
+                            <div class="analysis-node"></div>
+                            <div class="analysis-node"></div>
+                            <div class="analysis-node"></div>
+                        </div>
+                        <div class="exec-status">Checking delivery information...</div>
+                        <div class="exec-progress">
+                            <div class="exec-progress-bar">
+                                <div class="exec-progress-fill"></div>
+                            </div>
+                            <div class="exec-progress-text">Accessing real-time drone data</div>
+                        </div>
+                    </div>
+                `;
+
+                // Simulate executive-level processing
+                setTimeout(() => {
+                    responseArea.innerHTML = `
+                        <div class="exec-response">
+                            <div class="exec-response-header">
+                                <div class="exec-response-meta">
+                                    <h4>${responseData.title}</h4>
+                                    <div class="exec-response-timestamp">${new Date().toLocaleTimeString()} • Information Retrieved</div>
+                                </div>
+                            </div>
+                            <div class="exec-response-content">
+                                <p>${responseData.content}</p>
+                                <div class="exec-response-analytics">
+                                    <span class="analytics-confidence">Accuracy: 99.7%</span>
+                                    <span class="analytics-data">Based on real-time delivery data</span>
+                                    <span class="analytics-complexity">Response Time: ${Math.floor(1500 + Math.random() * 1000)}ms</span>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    responseArea.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }, 1500 + Math.random() * 1000);
+            }
+
+            function showExecFallbackResponse(query) {
+                responseArea.innerHTML = `
+                    <div class="exec-processing">
+                        <div class="exec-analysis-grid">
+                            <div class="analysis-node"></div>
+                            <div class="analysis-node"></div>
+                            <div class="analysis-node"></div>
+                            <div class="analysis-node"></div>
+                        </div>
+                        <div class="exec-status">Searching knowledge base...</div>
+                    </div>
+                `;
+
+                setTimeout(() => {
+                    responseArea.innerHTML = `
+                        <div class="exec-response">
+                            <div class="exec-response-header">
+                                <div class="exec-response-meta">
+                                    <h4>Special Assistance Needed</h4>
+                                    <div class="exec-response-timestamp">${new Date().toLocaleTimeString()} • Human Support Recommended</div>
+                                </div>
+                            </div>
+                            <div class="exec-response-content">
+                                <p>I couldn't find specific information about "${query}" in our knowledge base. Our customer support team can provide personalized assistance for your unique question about our drone delivery service.</p>
+                                <div class="exec-response-actions">
+                                    <button class="exec-action-btn" onclick="window.location.href='tel:+85599499746'">Call Support</button>
+                                    <button class="exec-action-btn" onclick="window.location.href='mailto:lengpovsry666@gmail.com'">Email Support</button>
+                                </div>
+                                <div class="exec-response-analytics">
+                                    <span class="analytics-confidence">Match Confidence: 72.3%</span>
+                                    <span class="analytics-data">Escalated to support team</span>
+                                    <span class="analytics-complexity">Complexity: High</span>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }, 2000);
+            }
+        });
+    </script>
+    
+    <!-- Modern AI Hub Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hubResponses = {
+                overview: {
+                    title: "Company Overview",
+                    content: "Aigrit delivers premium bread via AI drones in 25-30 mins. Serving Brussels with eco-friendly autonomous delivery technology."
+                },
+                tech: {
+                    title: "Technology",
+                    content: "Military-grade drones with AI navigation, LIDAR sensors, and real-time tracking. 99.9% safety record with encrypted communications."
+                },
+                delivery: {
+                    title: "Delivery Process",
+                    content: "Order online → AI route optimization → drone delivery in 30 mins. Real-time tracking from prep to doorstep arrival."
+                },
+                service: {
+                    title: "Service Areas",
+                    content: "15km coverage in central Brussels. Serving business districts and residential areas. Check app for real-time availability."
+                },
+                order: {
+                    title: "Ordering Guide",
+                    content: "Order via app/website with major payment options. Free delivery over €50. Track your drone in real-time."
+                },
+                support: {
+                    title: "Support Center",
+                    content: "24/7 AI support with 15-min resolution. Call 099 499 746 or email lengpovsry666@gmail.com for help."
+                }
+            };
+
+            const responsePanel = document.getElementById('modernAiResponse');
+            const knowledgeCards = document.querySelectorAll('.card');
+
+            knowledgeCards.forEach(card => {
+                card.addEventListener('click', () => {
+                    const topic = card.dataset.topic;
+                    showHubResponse(hubResponses[topic]);
+                });
+            });
+
+            function showHubResponse(responseData) {
+                // Show modern processing animation
+                responsePanel.innerHTML = `
+                    <div class="hub-processing">
+                        <div class="processing-visual">
+                            <div class="data-stream">
+                                <div class="stream-node"></div>
+                                <div class="stream-node"></div>
+                                <div class="stream-node"></div>
+                                <div class="stream-node"></div>
+                            </div>
+                        </div>
+                        <div class="processing-text">Accessing knowledge base...</div>
+                        <div class="progress-indicator">
+                            <div class="progress-bar">
+                                <div class="progress-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+
+                // Simulate modern AI processing
+                setTimeout(() => {
+                    responsePanel.innerHTML = `
+                        <div class="hub-response">
+                            <div class="response-header">
+                                <div class="header-content">
+                                    <h4>${responseData.title}</h4>
+                                    <div class="response-meta">
+                                        <span class="meta-item">${new Date().toLocaleTimeString()}</span>
+                                        <span class="meta-item">Knowledge Base Query</span>
+                                        <span class="meta-item">Confidence: 98.2%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="response-body">
+                                <p>${responseData.content}</p>
+                                <div class="response-footer">
+                                    <span class="data-source">Source: Aigrit Knowledge Base v2.1</span>
+                                    <span class="processing-time">Response Time: ${(1200 + Math.random() * 800).toFixed(0)}ms</span>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    responsePanel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }, 1200 + Math.random() * 800);
+            }
+        });
+    </script>
+</body>
+</html>

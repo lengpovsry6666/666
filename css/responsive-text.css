@@ -1,0 +1,22 @@
+/* Responsive text visibility for PC/Mobile differentiation */
+.show-desktop {
+    display: block;
+    background-color: rgba(255, 0, 0, 0.1); /* Debug: red tint */
+}
+
+.show-mobile {
+    display: none;
+    background-color: rgba(0, 255, 0, 0.1); /* Debug: green tint */
+}
+
+@media (max-width: 768px) {
+    .show-desktop {
+        display: none !important;
+        background-color: rgba(255, 0, 0, 0.3); /* Debug: darker red */
+    }
+    
+    .show-mobile {
+        display: block !important;
+        background-color: rgba(0, 255, 0, 0.3); /* Debug: darker green */
+    }
+}
